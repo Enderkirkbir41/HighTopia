@@ -1,3 +1,4 @@
+//bal
 package me.enderkirkbir.rm;
 
 import Game.Bow;
@@ -39,7 +40,7 @@ public class Main extends JavaPlugin
 {
   public static boolean Game = false;
   public static boolean Schutz = true;
-  public static String px = "§f[§cRageMode§f] §a";
+  public static String px = "Â§f[Â§cRageModeÂ§f] Â§a";
   public static int i = 60;
   public static int schutz = 15;
 
@@ -76,11 +77,11 @@ public class Main extends JavaPlugin
           Objective objective = board.registerNewObjective("test", "dummy");
 
           objective.setDisplaySlot(DisplaySlot.SIDEBAR);
-          objective.setDisplayName("§f[§cRageMode§f]");
+          objective.setDisplayName("Â§f[Â§cRageModeÂ§f]");
 
-          Score score1 = objective.getScore(Bukkit.getOfflinePlayer("§aOnline§7:"));
+          Score score1 = objective.getScore(Bukkit.getOfflinePlayer("Â§aOnlineÂ§7:"));
           if (!Main.Game) {
-            Score score2 = objective.getScore(Bukkit.getOfflinePlayer("§a§lZeit§7:"));
+            Score score2 = objective.getScore(Bukkit.getOfflinePlayer("Â§aÂ§lZeitÂ§7:"));
             score2.setScore(Main.i);
             score1.setScore(online);
             p.playSound(p.getLocation(), Sound.CLICK, 1.0F, 1000.0F);
@@ -213,7 +214,7 @@ public class Main extends JavaPlugin
               Bukkit.broadcastMessage("");
               Bukkit.broadcastMessage("");
               Bukkit.broadcastMessage("");
-              Bukkit.broadcastMessage(Main.px + "§7Noch §6" + Main.i + " Sekunden §7bis zum Start.");
+              Bukkit.broadcastMessage(Main.px + "Â§7Noch Â§6" + Main.i + " Sekunden Â§7bis zum Start.");
 
               for (Player Player : Bukkit.getOnlinePlayers())
               {
@@ -268,9 +269,9 @@ public class Main extends JavaPlugin
         Bukkit.broadcastMessage("");
         Bukkit.broadcastMessage("");
         Bukkit.broadcastMessage("");
-        Bukkit.broadcastMessage("§f[§cRage    §f]");
+        Bukkit.broadcastMessage("Â§f[Â§cRage    Â§f]");
         Bukkit.broadcastMessage("");
-        Bukkit.broadcastMessage("§610 sekunden §aschutzphase!");
+        Bukkit.broadcastMessage("Â§610 sekunden Â§aschutzphase!");
         p.playNote(p.getLocation(), Instrument.PIANO, Note.natural(1, Note.Tone.A));
         p.teleport(
           new Location(Bukkit.getServer().getWorld(getConfig().getString("rm.spawn.world")), 
@@ -303,9 +304,9 @@ public class Main extends JavaPlugin
             Bukkit.broadcastMessage("");
             Bukkit.broadcastMessage("");
             Bukkit.broadcastMessage("");
-            Bukkit.broadcastMessage("§f[§cRageMode§f]");
+            Bukkit.broadcastMessage("Â§f[Â§cRageModeÂ§f]");
             Bukkit.broadcastMessage("");
-            Bukkit.broadcastMessage("§b§lGo!");
+            Bukkit.broadcastMessage("Â§bÂ§lGo!");
             Main.Schutz = false;
 
             this.val$p.playNote(this.val$p.getLocation(), Instrument.PIANO, Note.natural(1, Note.Tone.A));
