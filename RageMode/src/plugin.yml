@@ -1,0 +1,9 @@
+name: RageMode
+version: 1
+main: me.enderkirkbir.rm.Main
+description: HighTopia
+commands:
+   
+    ragemode:
+    
+    
